@@ -1,26 +1,37 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* Gada brand colours */
+@theme {
+  --color-gada: #0b2a66;
+  --color-gada-50: #eef2fa;
+  --color-gada-100: #d6e0f2;
+  --color-gada-200: #adc1e5;
+  --color-gada-300: #7f9cd3;
+  --color-gada-400: #4e71ba;
+  --color-gada-500: #2a4f98;
+  --color-gada-600: #1a3b7e;
+  --color-gada-700: #0b2a66;
+  --color-gada-800: #08204f;
+  --color-gada-900: #061738;
+
+  --color-bridge: #f5c518;
+  --color-bridge-50: #fef9e6;
+  --color-bridge-100: #fdefb8;
+  --color-bridge-600: #d9a900;
+
+  --color-muted: #5b6b8c;
+  --color-line: #e3e7f0;
+  --color-surface: #f6f7fb;
 }
 
+/* Fonts are loaded in layout.tsx */
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-jakarta), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-outfit), ui-sans-serif, system-ui, sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer base {
+  h1, h2, h3, h4 {
+    @apply font-display text-gada;
   }
-}
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
 }
