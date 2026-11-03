@@ -10,7 +10,7 @@ const points = [
   "Share wins, from first approvals to first payouts",
 ];
 
-export function LearnTogether() {
+export function LearnTogether({ headingAs: Heading = "h2" }: { headingAs?: "h1" | "h2" }) {
   return (
     <section id="community" className="scroll-mt-20 py-20 md:py-28">
       <Container className="grid items-center gap-12 lg:grid-cols-[1.15fr_1fr]">
@@ -39,7 +39,7 @@ export function LearnTogether() {
 
         <div>
           <p className="text-sm font-semibold uppercase tracking-wider text-bridge-600">Learn together</p>
-          <h2 className="mt-3 text-3xl font-bold sm:text-4xl">You won&rsquo;t figure it out alone</h2>
+          <Heading className="mt-3 text-3xl font-bold sm:text-4xl">You won&rsquo;t figure it out alone</Heading>
           <p className="mt-4 text-lg leading-relaxed text-muted">
             Behind Gada is a real, active community. We run live classes, answer questions and
             celebrate progress together, and verified taskers get full access.

@@ -1,0 +1,13 @@
+import type { Metadata } from "next";
+import { Container } from "@/components/ui/container";
+import { DashboardView } from "@/features/dashboard/components/dashboard-view";
+
+export const metadata: Metadata = { title: "Dashboard" };
+
+export default function DashboardPage() {
+  return (
+    <Container>
+      <DashboardView />
+    </Container>
+  );
+}

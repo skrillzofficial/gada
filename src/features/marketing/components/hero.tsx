@@ -27,7 +27,7 @@ export function Hero() {
             <ButtonLink href="/sign-in" size="lg">
               Join Gada
             </ButtonLink>
-            <ButtonLink href="/#how-it-works" size="lg" variant="secondary">
+            <ButtonLink href="/how-it-works" size="lg" variant="secondary">
               How it works
             </ButtonLink>
           </div>
@@ -59,11 +59,11 @@ function HeroIllustration() {
       <div className="relative mt-16 rounded-3xl border border-line bg-white p-6 shadow-xl shadow-gada/10">
         <div className="flex items-start gap-4">
           <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-gada font-display text-xl font-bold text-white">
-            AO
+            MO
           </div>
           <div className="min-w-0 flex-1">
             <div className="flex flex-wrap items-center gap-2">
-              <p className="font-display text-lg font-semibold text-gada">Amina O.</p>
+              <p className="font-display text-lg font-semibold text-gada">Maris O.</p>
               <VerifiedBadge />
             </div>
             <p className="mt-1 flex items-center gap-1 text-sm text-muted">

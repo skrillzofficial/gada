@@ -79,13 +79,13 @@ const paths: WorkPath[] = [
   },
 ];
 
-export function WorkPaths() {
+export function WorkPaths({ headingAs: Heading = "h2" }: { headingAs?: "h1" | "h2" }) {
   return (
     <section id="paths" className="scroll-mt-20 overflow-hidden bg-gada py-20 md:py-28">
       <Container>
         <div className="max-w-2xl">
           <p className="text-sm font-semibold uppercase tracking-wider text-bridge">Paths you can grow into</p>
-          <h2 className="mt-3 text-3xl font-bold text-white sm:text-4xl">Find the work that fits you</h2>
+          <Heading className="mt-3 text-3xl font-bold text-white sm:text-4xl">Find the work that fits you</Heading>
           <p className="mt-4 text-lg text-gada-200">
             AI-training work comes in many forms. Your profile helps our team see where you&rsquo;ll
             shine, and which platforms to recommend.

@@ -7,16 +7,17 @@ const columns = [
     title: "Taskers",
     links: [
       { label: "Join Gada", href: "/sign-in" },
-      { label: "How assessment works", href: "/#faq" },
-      { label: "Paths you can take", href: "/#paths" },
+      { label: "How assessment works", href: "/faq" },
+      { label: "Paths you can take", href: "/paths" },
     ],
   },
   {
     title: "Gada",
     links: [
-      { label: "How it works", href: "/#how-it-works" },
-      { label: "Why Gada", href: "/#why-gada" },
-      { label: "FAQ", href: "/#faq" },
+      { label: "How it works", href: "/how-it-works" },
+      { label: "Why Gada", href: "/why-gada" },
+      { label: "Our community", href: "/our-community" },
+      { label: "FAQ", href: "/faq" },
     ],
   },
 ];

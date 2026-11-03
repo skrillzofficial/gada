@@ -134,16 +134,6 @@ export function DoorWelcome({ name }: { name?: string }) {
         )}
       </section>
 
-      {/* Always let people skip the animation */}
-      {!isWelcome && (
-        <button
-          type="button"
-          onClick={() => setPhase("welcome")}
-          className="absolute bottom-6 right-6 rounded-full border border-white/20 px-4 py-2 text-sm font-medium text-white/80 hover:bg-white/10"
-        >
-          Skip
-        </button>
-      )}
     </main>
   );
 }

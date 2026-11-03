@@ -1,4 +1,6 @@
+import Image from "next/image";
 import { ChevronDown } from "lucide-react";
+import blueLeaves from "@/assets/images/blue-leaves.webp";
 import { Container } from "@/components/ui/container";
 
 const faqs = [
@@ -28,15 +30,25 @@ const faqs = [
   },
 ];
 
-export function Faq() {
+export function Faq({ headingAs: Heading = "h2" }: { headingAs?: "h1" | "h2" }) {
   return (
     <section id="faq" className="scroll-mt-20 py-20 md:py-28">
       <Container className="grid gap-10 lg:grid-cols-[1fr_2fr]">
         <div>
           <p className="text-sm font-semibold uppercase tracking-wider text-bridge-600">FAQ</p>
-          <h2 className="mt-3 text-3xl font-bold sm:text-4xl">Questions, answered</h2>
+          <Heading className="mt-3 text-3xl font-bold sm:text-4xl">Questions, answered</Heading>
+          <div className="relative mt-8 hidden aspect-[4/5] overflow-hidden rounded-3xl border border-line lg:block">
+            <Image
+              src={blueLeaves}
+              alt="Blue leaves in a white vase"
+              placeholder="blur"
+              fill
+              sizes="(min-width: 1024px) 360px, 0px"
+              className="object-cover"
+            />
+          </div>
         </div>
-        <div className="divide-y divide-line rounded-2xl border border-line">
+        <div className="h-fit divide-y divide-line rounded-2xl border border-line">
           {faqs.map((item) => (
             <details key={item.q} className="group px-6 py-5">
               <summary className="flex cursor-pointer list-none items-center justify-between gap-4 font-semibold text-gada [&::-webkit-details-marker]:hidden">

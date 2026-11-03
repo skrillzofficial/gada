@@ -27,14 +27,14 @@ const steps = [
   },
 ];
 
-export function HowItWorks() {
+export function HowItWorks({ headingAs: Heading = "h2" }: { headingAs?: "h1" | "h2" }) {
   return (
     <section id="how-it-works" className="scroll-mt-20 py-20 md:py-28">
       <Container>
         <div className="grid items-center gap-10 md:grid-cols-[1.4fr_1fr]">
           <div className="max-w-2xl">
             <p className="text-sm font-semibold uppercase tracking-wider text-bridge-600">How it works</p>
-            <h2 className="mt-3 text-3xl font-bold sm:text-4xl">From profile to platform in four steps</h2>
+            <Heading className="mt-3 text-3xl font-bold sm:text-4xl">From profile to platform in four steps</Heading>
             <p className="mt-4 text-lg text-muted">
               Whether you&rsquo;re just starting out or already experienced, Gada helps you find your
               next step, and you never have to figure it out alone.

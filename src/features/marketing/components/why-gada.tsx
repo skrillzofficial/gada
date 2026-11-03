@@ -27,13 +27,13 @@ const reasons = [
 ];
 
 
-export function WhyGada() {
+export function WhyGada({ headingAs: Heading = "h2" }: { headingAs?: "h1" | "h2" }) {
   return (
     <section id="why-gada" className="scroll-mt-20 bg-surface py-20 md:py-28">
       <Container>
         <div className="max-w-2xl">
           <p className="text-sm font-semibold uppercase tracking-wider text-bridge-600">Why Gada</p>
-          <h2 className="mt-3 text-3xl font-bold sm:text-4xl">More than a list of links</h2>
+          <Heading className="mt-3 text-3xl font-bold sm:text-4xl">More than a list of links</Heading>
         </div>
 
         <div className="mt-12 grid gap-6 lg:grid-cols-[1fr_2fr]">
